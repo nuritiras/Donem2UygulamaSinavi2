@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1060548441638",
+    "project_id": "sinavahazirlik-688c2",
+    "storage_bucket": "sinavahazirlik-688c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060548441638:android:91a9b84599fef0e5ec18e7",
+        "android_client_info": {
+          "package_name": "tr.com.nuritiras.sinavuygulamasi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjOBzQq1MLOzEREOxGN_wRZBXqiM03Cqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

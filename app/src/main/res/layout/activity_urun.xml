@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrunActivity">
+
+    <EditText
+        android:id="@+id/editUrunDecimalFiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Fiyat:"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/editUrunNumberAdet"
+        app:layout_constraintEnd_toEndOf="@+id/editUrunTextAdi"
+        app:layout_constraintTop_toBottomOf="@+id/editUrunTextAdi" />
+
+    <EditText
+        android:id="@+id/editUrunTextAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Ürün Adı:"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editUrunDecimalFiyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUrunNumberAdet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Adet:"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/editUrunDecimalFiyat"
+        app:layout_constraintTop_toBottomOf="@+id/editUrunDecimalFiyat" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:onClick="onClickKaydet"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUrunDurum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUrunNumberAdet" />
+
+    <TextView
+        android:id="@+id/textViewUrunDurum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="142dp"
+        android:text="Durum:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

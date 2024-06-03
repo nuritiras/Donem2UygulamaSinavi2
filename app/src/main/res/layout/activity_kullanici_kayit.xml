@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KullaniciKayitActivity">
+
+    <EditText
+        android:id="@+id/editKayitTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:hint="E-Posta adres:"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editKayitTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Parola:"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/editKayitTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editKayitTextRePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Parola tekrar"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/buttonKullaniciKayit"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitTextPassword" />
+
+    <Button
+        android:id="@+id/buttonKullaniciKayit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="18dp"
+        android:onClick="onClickKayitOl"
+        android:text="Kayıt Ol"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGirisYap"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitTextRePassword" />
+
+    <Button
+        android:id="@+id/buttonGirisYap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickGirisYap"
+        android:text="Giriş Yap"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonKullaniciKayit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonKullaniciKayit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
